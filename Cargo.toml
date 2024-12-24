@@ -1,0 +1,12 @@
+[package]
+name = "simple-api-actix-web"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-cors = "0.7.0"
+actix-web = "4.9.0"
+chrono = { version = "0.4.39", features = ["serde"] }
+env_logger = "0.11.6"
+serde = { version = "1.0.216", features = ["derive"] }
+uuid = { version = "1.11.0", features = ["v4"] }

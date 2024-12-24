@@ -1,0 +1,29 @@
+### GET - /api/health
+GET http://localhost:8000/api/health
+
+### GET - /api/todos
+GET http://localhost:8000/api/todos?page=1&limit=10
+
+### GET - /api/todos/{id}
+GET http://localhost:8000/api/todos/3e624598-3237-4b9d-933f-f14c0668509e
+
+### POST - /api/todos
+POST http://localhost:8000/api/todos
+Content-Type: application/json
+
+{
+  "title": "Learn how to build a CRUD API with Actix Web framework in Rust",
+  "content": "Rust a system programming language"
+}
+
+### PATCH - /api/todos/{id}
+PATCH http://localhost:8000/api/todos/116ab9ea-1800-4857-bb1a-2febbea15a71
+Content-Type: application/json
+
+{
+  "title": "New title for the Actix Web CRUD API ✅🚀",
+  "completed": true
+}
+
+### DELETE - /api/todos/{id}
+DELETE http://localhost:8000/api/todos/3e624598-3237-4b9d-933f-f14c0668509e
